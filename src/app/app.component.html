@@ -1,0 +1,28 @@
+<section class="container mt-5">
+	<section class="row card alert alert-dark">
+		<a (click)="addNote()" href="javascript:void(0);" class="btn btn-primary">New Note</a>
+		<section class="card-body pl-0 pr-4">
+			<section class="col-lg-6 card mr-4">
+				<h2>Listado de Notas</h2>
+				<ul class="list-group">
+					<li class="list-group-item" *ngFor="let note of my_notes">
+						ID: {{note.id}} - TITLE: {{note.title}} - DESCRIPTION: {{note.description}}
+					</li>
+				</ul>
+			</section>
+			<section class="col-lg-6 card" *ngIf="show_form">
+				<h2>Nueva Nota</h2>
+				<input type="text" class="form-control" placeholder="Title Note" [(ngModel)]="note.title"/>
+				<textarea class="form-control" placeholder="Note Body" [(ngModel)]="note.description"></textarea>
+				<div class="row mt-2">
+					<div class="col-md-6">
+						<a href="javascript:void(0);" class="btn btn-dark btn-block" (click)="cancel()">Cancel</a>
+					</div>
+					<div class="col-md-6">
+						<a href="javascript:void(0);" class="btn btn-primary btn-block" (click)="createNote()">Create Note</a>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+</section>
