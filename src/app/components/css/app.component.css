@@ -1,0 +1,23 @@
+.form-control {
+  height: auto !important;
+  margin-top: 2rem !important;
+}
+.form-control input.form-control {
+  margin-top: 0 !important;
+}
+.form-control h1 {
+  text-align: center !important;
+}
+.form-control figure {
+  width: 9rem !important;
+  margin: 0 auto !important;
+}
+.form-control p {
+  height: auto !important;
+  min-height: 60px !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+}
+.jumbotron {
+  padding: 1rem !important;
+}
